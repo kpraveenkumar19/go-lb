@@ -33,7 +33,7 @@ go-lb is a simple, custom [load balancer](https://www.cloudflare.com/en-in/learn
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/kpraveenkumar19/load-balancer.git
+    git clone https://github.com/kpraveenkumar19/go-lb.git
     cd load-balancer
     ```
 
