@@ -1,6 +1,9 @@
-# go-lb
+<h1>
+  <img src="assets/images/icon.png" alt="Torrent-X icon" width="36" height="36" style="vertical-align: -0.25em; margin-right: 8px;" />
+  go-lb
+</h1>
 
-go-lb is a simple, custom load balancer written in Go. It uses a round-robin load balancing strategy to send requests into a set of servers with support for concurrent request handling. It also performs active and passive health checks of servers.
+go-lb is a simple, custom [load balancer](https://www.cloudflare.com/en-in/learning/performance/what-is-load-balancing/) written in Go. It uses a [round-robin](https://en.wikipedia.org/wiki/Round-robin_scheduling) load balancing strategy to send requests into a set of servers with support for concurrent request handling. It also performs active and passive health checks of servers.
 
 ## Table of Contents
 
@@ -11,9 +14,7 @@ go-lb is a simple, custom load balancer written in Go. It uses a round-robin loa
 - [Usage](#usage)
   - [Running with Test Script](#running-with-test-script)
   - [Manual Setup](#manual-setup)
-- [Architecture](#architecture)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -135,6 +136,7 @@ If you prefer to run components individually:
     ```
      Check the output logs of the load balancer and servers to see the request distribution. 
      Below is an example of how logs will look like : 
+
      ![logs-1](assets/images/logs-1.png)
      ![logs-2](assets/images/logs-2.png)
 
