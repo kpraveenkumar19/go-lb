@@ -1,5 +1,5 @@
 <h1>
-  <img src="assets/images/icon.png" alt="Torrent-X icon" width="36" height="36" style="vertical-align: -0.25em; margin-right: 8px;" />
+  <img src="assets/images/icon.png" alt="Torrent-X icon" width="38" height="38" style="vertical-align: -0.25em; margin-right: 8px;" />
   go-lb
 </h1>
 
