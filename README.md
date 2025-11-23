@@ -19,9 +19,7 @@ go-lb is a simple, custom load balancer written in Go. It uses a round-robin loa
 
 - **Round-Robin Scheduling:** Distributes requests evenly across all healthy backend servers.
 - **Active Health Checks:** Periodically pings backends to verify their status and automatically removes unhealthy servers from the pool.
-- **Fault Tolerance:** Automatically retries failed requests on different backends (up to 3 attempts).
-- **Concurrency:** Efficiently handles concurrent requests using Go's concurrency model.
-- **Dynamic Configuration:** flexible backend configuration via command-line arguments.
+- **Concurrency:** Efficiently handles concurrent requests.
 
 ## Getting Started
 
@@ -89,7 +87,7 @@ If you prefer to run components individually:
     | Flag | Description |
     |------|-------------|
     | `--name` | Name of the server |
-    | `--port` | Port for the load balancer to listen on (default: 3030). |
+    | `--port` | Port for the load balancer to listen on (default: 8080). |
    
     ```bash
     ./bin/server -port 8081 -name "Server-1" &
@@ -117,14 +115,15 @@ If you prefer to run components individually:
 
     ```bash
     # "------------------------------------------------"
-    # "Test 1: Basic Round Robin (8 requests)"
+    # "Test 1: Sequential Requests"
     # "------------------------------------------------"
+    echo "Sending 8 sequential requests..."
     for i in {1..8}; do
         curl -s "http://localhost:3030"
     done
 
     # "------------------------------------------------"
-    # "Test 2: Concurrent Requests (100 requests)"
+    # "Test 2: Concurrent Requests"
     # "------------------------------------------------"
     echo "Sending 100 concurrent requests..."
     (
@@ -134,7 +133,10 @@ If you prefer to run components individually:
     wait
     )
     ```
-     Check the output logs of the load balancer and servers to see the request distribution.
+     Check the output logs of the load balancer and servers to see the request distribution. 
+     Below is an example of how logs will look like : 
+     ![logs-1](assets/images/logs-1.png)
+     ![logs-2](assets/images/logs-2.png)
 
 ## Contributing
 

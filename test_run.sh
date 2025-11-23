@@ -31,8 +31,9 @@ sleep 2
 #5. Test cases
 
 # "------------------------------------------------"
-# "Test 1: Basic Round Robin (8 requests)"
+# "Test 1: Sequential Requests"
 # "------------------------------------------------"
+echo "Sending 8 sequential requests..."
 for i in {1..8}; do
     curl -s "http://localhost:3030"
 done
