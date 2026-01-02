@@ -3,7 +3,7 @@
   go-lb
 </h1>
 
-go-lb is a simple, custom [load balancer](https://www.cloudflare.com/en-in/learning/performance/what-is-load-balancing/) written in Go. It uses a [round-robin](https://en.wikipedia.org/wiki/Round-robin_scheduling) load balancing strategy to send requests into a set of servers with support for concurrent request handling. It also performs active and passive health checks of servers.
+go-lb is a simple, custom <a href="https://www.cloudflare.com/en-in/learning/performance/what-is-load-balancing/" target="_blank">load balancer</a> written in Go. It uses a <a href="https://en.wikipedia.org/wiki/Round-robin_scheduling" target="_blank">round-robin</a> load balancing strategy to send requests into a set of servers with support for concurrent request handling. It also performs active and passive health checks of servers.
 
 ## Table of Contents
 
